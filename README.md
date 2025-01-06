@@ -1,6 +1,9 @@
 # PAYTR-Private
 A repository for the Paytr protocol smart contracts
 
+# PAYTR-Private
+A repository for the Paytr protocol smart contracts
+
 ## Table of Contents
 1. [Description](#description)
 2. [Cloning the Repository](#cloning-the-repository)
@@ -8,15 +11,20 @@ A repository for the Paytr protocol smart contracts
 4. [Contribution Guidelines](#contribution-guidelines)
 5. [License](#license)
 
+<script src="https://gist.github.com/robertohuertasm/4770217e40209ad6a65acb1d725c3f87.js"></script>
+
 ## Description
 This repository contains the smart contracts for the Paytr protocol. The Paytr protocol is designed to facilitate secure and efficient transactions on the Ethereum blockchain.
 
 ## Cloning the Repository
 To clone this repository, use the following command:
-```
-gh repo clone Setland34/PAYTR-Private
-```
 
+## Description
+This repository contains the smart contracts for the Paytr protocol. The Paytr protocol is designed to facilitate secure and efficient transactions on the Ethereum blockchain.
+
+## Cloning the Repository
+To clone this repository, use the following command:
+gh repo clone Setland34/PAYTR-Private
 ## Usage Instructions
 ### Prerequisites
 - Ensure you have Node.js and npm installed.
@@ -32,21 +40,12 @@ gh repo clone Setland34/PAYTR-Private
 
 ### Interaction
 - Use Truffle Console to interact with the deployed contracts:
-  ```
-  truffle console
-  ```
+
 - Example of interacting with a contract:
-  ```javascript
-  const instance = await MyContract.deployed();
-  const result = await instance.myFunction();
-  console.log(result);
-  ```
 
-## Contribution Guidelines
-We welcome contributions to the Paytr protocol smart contracts. To contribute, please follow these guidelines:
-- Report issues through the GitHub Issues tab.
-- Submit pull requests with clear descriptions of the changes.
-- Follow the coding standards and best practices outlined in the repository.
+```javascript
+const instance = await MyContract.deployed();
+const result = await instance.myFunction();
+console.log(result);
 
-## License
-The Paytr protocol smart contracts are released under the MIT License. See the [LICENSE](LICENSE) file for the full text of the license.
+This combines the changes from both branches. You can apply this manually to resolve the conflicts.
