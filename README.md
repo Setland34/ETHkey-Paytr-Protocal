@@ -23,6 +23,10 @@ To clone this repository, use the following command:
 ```
 gh repo clone Setland34/PAYTR-Private
 ```
+To clone this repository using git, use the following command:
+```
+git clone https://github.com/Setland34/PAYTR-Private.git
+```
 
 ## Usage Instructions
 ### Prerequisites
