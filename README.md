@@ -14,6 +14,9 @@ A repository for the Paytr protocol smart contracts
 - [Project Structure](#project-structure)
 - [FAQ](#faq)
 - [Troubleshooting](#troubleshooting)
+- [Detailed Usage Examples](#detailed-usage-examples)
+- [Integrating with Frontend Application](#integrating-with-frontend-application)
+- [Testing Smart Contracts](#testing-smart-contracts)
 
 ## Description
 This repository contains the smart contracts for the Paytr protocol. The Paytr protocol is designed to facilitate secure and efficient transactions on the Ethereum blockchain.
