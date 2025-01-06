@@ -13,6 +13,12 @@ A repository for the ETHkey protocol smart contracts
 9. [Usage Instructions](#usage-instructions)
 10. [Contributing](#contributing)
 11. [Code of Conduct](#code-of-conduct)
+12. [Prerequisites](#prerequisites)
+13. [Troubleshooting](#troubleshooting)
+14. [License](#license)
+15. [Getting Started](#getting-started)
+16. [Project Structure](#project-structure)
+17. [Configuration](#configuration)
 
 ## Description
 This repository contains the smart contracts for the ETHkey protocol. The ETHkey protocol is designed to facilitate secure and efficient transactions on the Ethereum blockchain.
@@ -107,5 +113,40 @@ To contribute to this project, follow these guidelines:
 
 ## Code of Conduct
 To ensure a welcoming and inclusive community, we have adopted a code of conduct. Please read and follow it.
+
+## Prerequisites
+List all necessary tools and versions required before starting the setup.
+
+## Troubleshooting
+Help users resolve common issues during setup or usage.
+
+## License
+Specify the licensing terms for the repository.
+
+## Getting Started
+To start using the repository, follow these steps:
+1. Clone the repository:
+```
+gh repo clone Setland34/ETHkey-1
+```
+2. Install dependencies:
+```
+npm install
+```
+3. Compile and migrate the contracts:
+```
+truffle compile
+truffle migrate --network development
+```
+
+## Project Structure
+The directory structure and the purpose of each file are as follows:
+- `contracts/`: Contains the smart contracts.
+- `migrations/`: Contains the migration scripts.
+- `test/`: Contains the test scripts.
+- `truffle-config.js`: Truffle configuration file.
+
+## Configuration
+To modify configuration settings, update the `truffle-config.js` file with the appropriate network settings and other configurations.
 
 <script src="https://gist.github.com/Setland34/1f52d3d6f2382851bafff6c5bb850b6b.js"></script>
