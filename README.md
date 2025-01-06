@@ -80,6 +80,27 @@ If you encounter any issues, please report them using the GitHub issue tracker.
 - Write clear and concise commit messages.
 - Include tests for new features and bugfixes.
 
+### Setting Up Development Environment
+1. Clone the repository:
+   ```
+   git clone https://github.com/Setland34/PAYTR-Private.git
+   ```
+2. Install dependencies:
+   ```
+   npm install
+   ```
+3. Set up Ganache and Truffle as described in the [Usage Instructions](#usage-instructions) section.
+
+### Writing and Running Tests
+1. Write tests in the `test/` directory.
+2. Run tests using the following command:
+   ```
+   truffle test
+   ```
+
+### Code of Conduct
+Please adhere to the [Code of Conduct](CODE_OF_CONDUCT.md) to ensure a positive and inclusive community for contributors.
+
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
@@ -103,3 +124,32 @@ Follow the instructions in the [Usage Instructions](#usage-instructions) section
 ### Debugging Tips
 - Use the Truffle console to interact with the deployed contracts and debug issues.
 - Check the transaction logs for any errors or warnings.
+
+## Detailed Usage Examples
+### Interacting with Deployed Contracts
+1. Open the Truffle console:
+   ```
+   truffle console
+   ```
+2. Interact with the deployed contracts:
+   ```javascript
+   const instance = await Paytr.deployed();
+   const result = await instance.someFunction();
+   console.log(result);
+   ```
+
+### Real-World Scenario
+1. Integrate the smart contracts with a frontend application using web3.js or ethers.js.
+2. Call different functions and handle responses in the frontend application.
+
+## Integrating with Frontend Application
+1. Set up a frontend application using a framework like React or Angular.
+2. Use web3.js or ethers.js to interact with the deployed smart contracts.
+3. Call functions and handle responses in the frontend application.
+
+## Testing Smart Contracts
+1. Write tests in the `test/` directory.
+2. Run tests using the following command:
+   ```
+   truffle test
+   ```
