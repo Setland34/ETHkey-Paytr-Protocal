@@ -1,9 +1,6 @@
 # PAYTR-Private
 A repository for the Paytr protocol smart contracts
 
-# PAYTR-Private
-A repository for the Paytr protocol smart contracts
-
 ## Table of Contents
 1. [Description](#description)
 2. [Cloning the Repository](#cloning-the-repository)
@@ -11,41 +8,69 @@ A repository for the Paytr protocol smart contracts
 4. [Contribution Guidelines](#contribution-guidelines)
 5. [License](#license)
 
-<script src="https://gist.github.com/robertohuertasm/4770217e40209ad6a65acb1d725c3f87.js"></script>
-
 ## Description
 This repository contains the smart contracts for the Paytr protocol. The Paytr protocol is designed to facilitate secure and efficient transactions on the Ethereum blockchain.
 
 ## Cloning the Repository
 To clone this repository, use the following command:
-
-## Description
-This repository contains the smart contracts for the Paytr protocol. The Paytr protocol is designed to facilitate secure and efficient transactions on the Ethereum blockchain.
-
-## Cloning the Repository
-To clone this repository, use the following command:
+```
 gh repo clone Setland34/PAYTR-Private
+```
+
 ## Usage Instructions
 ### Prerequisites
 - Ensure you have Node.js and npm installed.
-- Install Truffle globally using `npm install -g truffle`.
-- Install Ganache CLI globally using `npm install -g ganache-cli`.
+- Install Truffle and Ganache CLI globally using npm:
+  ```
+  npm install -g truffle
+  npm install -g ganache-cli
+  ```
 
 ### Deployment
 1. Clone the repository and navigate to the project directory.
-2. Install the dependencies using `npm install`.
-3. Start Ganache CLI using `ganache-cli`.
-4. Compile the smart contracts using `truffle compile`.
-5. Migrate the smart contracts to the local blockchain using `truffle migrate`.
+2. Install the dependencies:
+   ```
+   npm install
+   ```
+3. Start the Ganache CLI:
+   ```
+   ganache-cli
+   ```
+4. In a new terminal, compile and migrate the smart contracts:
+   ```
+   truffle compile
+   truffle migrate
+   ```
 
 ### Interaction
-- Use Truffle Console to interact with the deployed contracts:
+1. Open the Truffle console:
+   ```
+   truffle console
+   ```
+2. Interact with the deployed contracts using JavaScript. For example:
+   ```javascript
+   const instance = await Paytr.deployed();
+   const result = await instance.someFunction();
+   console.log(result);
+   ```
 
-- Example of interacting with a contract:
+## Contribution Guidelines
+We welcome contributions to the Paytr protocol smart contracts. To contribute, please follow these guidelines:
 
-```javascript
-const instance = await MyContract.deployed();
-const result = await instance.myFunction();
-console.log(result);
+### Reporting Issues
+- Use the GitHub issue tracker to report bugs or request features.
+- Provide as much detail as possible, including steps to reproduce the issue.
 
-This combines the changes from both branches. You can apply this manually to resolve the conflicts.
+### Submitting Pull Requests
+- Fork the repository and create a new branch for your feature or bugfix.
+- Ensure your code follows the coding standards and best practices.
+- Write tests for your changes and ensure all existing tests pass.
+- Submit a pull request with a clear description of your changes.
+
+### Coding Standards
+- Follow the existing code style and conventions.
+- Write clear and concise comments where necessary.
+- Ensure your code is well-documented.
+
+## License
+The Paytr protocol smart contracts are released under the MIT License. See the [LICENSE](LICENSE) file for more details.
