@@ -1,20 +1,24 @@
-# PAYTR-Private
-A repository for the Paytr protocol smart contracts
+# ETHkey-1
+A repository for the ETHkey protocol smart contracts
 
 ## Table of Contents
 1. [Description](#description)
 2. [Cloning the Repository](#cloning-the-repository)
 3. [Usage Instructions](#usage-instructions)
-4. [Contribution Guidelines](#contribution-guidelines)
-5. [License](#license)
+4. [Installing Additional Dependencies](#installing-additional-dependencies)
+5. [Testing Instructions](#testing-instructions)
+6. [API Documentation](#api-documentation)
+7. [Changelog](#changelog)
+8. [Contribution Guidelines](#contribution-guidelines)
+9. [License](#license)
 
 ## Description
-This repository contains the smart contracts for the Paytr protocol. The Paytr protocol is designed to facilitate secure and efficient transactions on the Ethereum blockchain.
+This repository contains the smart contracts for the ETHkey protocol. The ETHkey protocol is designed to facilitate secure and efficient transactions on the Ethereum blockchain.
 
 ## Cloning the Repository
 To clone this repository, use the following command:
 ```
-gh repo clone Setland34/PAYTR-Private
+gh repo clone Setland34/ETHkey-1
 ```
 
 ## Usage Instructions
@@ -54,8 +58,83 @@ gh repo clone Setland34/PAYTR-Private
    console.log(result);
    ```
 
+### Detailed Usage Examples
+#### Common Use Cases
+- Example 1: Deploying a new contract
+  ```javascript
+  const MyContract = artifacts.require("MyContract");
+  module.exports = function(deployer) {
+    deployer.deploy(MyContract);
+  };
+  ```
+
+- Example 2: Interacting with a deployed contract
+  ```javascript
+  const instance = await MyContract.deployed();
+  const value = await instance.getValue();
+  console.log(value);
+  ```
+
+#### Handling Errors and Exceptions
+- Example: Handling a transaction error
+  ```javascript
+  try {
+    const result = await instance.someFunction();
+    console.log(result);
+  } catch (error) {
+    console.error("Transaction failed:", error);
+  }
+  ```
+
+## Installing Additional Dependencies
+If your project requires additional dependencies, you can install them using npm. For example:
+```
+npm install <dependency-name>
+```
+Replace `<dependency-name>` with the name of the dependency you want to install.
+
+## Testing Instructions
+To run tests for the smart contracts, use the following command:
+```
+truffle test
+```
+This will execute the test scripts located in the `test` directory and display the results.
+
+## API Documentation
+The API documentation provides detailed information about the functions and methods available in the smart contracts. Refer to the `docs` directory for the complete API documentation.
+
+### Overview
+The API allows you to interact with the smart contracts deployed on the Ethereum blockchain. It provides functions for querying data, executing transactions, and managing contract state.
+
+### Examples
+- Example 1: Querying contract data
+  ```javascript
+  const data = await instance.getData();
+  console.log(data);
+  ```
+
+- Example 2: Executing a transaction
+  ```javascript
+  const receipt = await instance.setData(newValue);
+  console.log(receipt);
+  ```
+
+### Authentication
+If your API requires authentication, include the necessary headers or tokens in your requests. For example:
+```javascript
+const options = {
+  headers: {
+    Authorization: `Bearer ${token}`
+  }
+};
+const response = await fetch(apiUrl, options);
+```
+
+## Changelog
+The changelog keeps track of changes and updates made to the repository. Refer to the `CHANGELOG.md` file for a detailed list of changes.
+
 ## Contribution Guidelines
-We welcome contributions to the Paytr protocol smart contracts. To contribute, please follow these guidelines:
+We welcome contributions to the ETHkey protocol smart contracts. To contribute, please follow these guidelines:
 
 ### Reporting Issues
 - Use the GitHub issue tracker to report bugs or request features.
@@ -72,5 +151,31 @@ We welcome contributions to the Paytr protocol smart contracts. To contribute, p
 - Write clear and concise comments where necessary.
 - Ensure your code is well-documented.
 
+### Setting Up a Development Environment
+1. Clone the repository and navigate to the project directory.
+2. Install the dependencies:
+   ```
+   npm install
+   ```
+3. Start the Ganache CLI:
+   ```
+   ganache-cli
+   ```
+4. In a new terminal, compile and migrate the smart contracts:
+   ```
+   truffle compile
+   truffle migrate
+   ```
+
+### Running Tests
+To run tests for the smart contracts, use the following command:
+```
+truffle test
+```
+This will execute the test scripts located in the `test` directory and display the results.
+
+### Code of Conduct
+We are committed to fostering a welcoming and inclusive community. Please read and adhere to our [Code of Conduct](CODE_OF_CONDUCT.md).
+
 ## License
-The Paytr protocol smart contracts are released under the MIT License. See the [LICENSE](LICENSE) file for more details.
+The ETHkey protocol smart contracts are released under the MIT License. See the [LICENSE](LICENSE) file for more details.
