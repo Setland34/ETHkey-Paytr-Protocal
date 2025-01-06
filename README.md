@@ -21,7 +21,7 @@ A repository for the ETHkey protocol smart contracts
 17. [Configuration](#configuration)
 
 ## Description
-This repository contains the smart contracts for the ETHkey protocol. The ETHkey protocol is designed to facilitate secure and efficient transactions on the Ethereum blockchain.
+This repository contains the smart contracts for the Paytr protocol. The Paytr protocol is designed to facilitate secure and efficient transactions on the Ethereum blockchain.
 
 ## Cloning the Repository
 To clone this repository, use the following command:
