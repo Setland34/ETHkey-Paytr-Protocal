@@ -27,6 +27,10 @@ To clone this repository using git, use the following command:
 ```
 git clone https://github.com/Setland34/PAYTR-Private.git
 ```
+To clone the License repository, use the following command:
+```
+git clone https://github.com/Setland34/License.git
+```
 
 ## Usage Instructions
 ### Prerequisites
