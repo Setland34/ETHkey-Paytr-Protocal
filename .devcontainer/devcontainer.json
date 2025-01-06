@@ -1,6 +1,7 @@
 {
   "tasks": {
     "build": "npm install && truffle compile",
-    "test": "truffle test"
+    "test": "truffle test",
+    "launch": "ganache-cli && truffle compile && truffle migrate --network development"
   }
 }
