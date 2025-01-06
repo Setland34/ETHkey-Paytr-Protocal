@@ -100,6 +100,11 @@ truffle test
 ```
 This will execute the test scripts located in the `test` directory and display the results.
 
+To run tests with a forked mainnet, use the following command:
+```
+forge test --fork-url https://eth-sepolia.g.alchemy.com/v2/YOURKEY
+```
+
 ## API Documentation
 The API documentation provides detailed information about the functions and methods available in the smart contracts. Refer to the `docs` directory for the complete API documentation.
 
