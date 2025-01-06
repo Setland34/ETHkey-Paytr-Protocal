@@ -1,5 +1,6 @@
 {
   "tasks": {
-    "build": "npm install && truffle compile"
+    "build": "npm install && truffle compile",
+    "test": "truffle test"
   }
 }
