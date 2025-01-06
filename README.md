@@ -4,13 +4,15 @@ A repository for the ETHkey protocol smart contracts
 ## Table of Contents
 1. [Description](#description)
 2. [Cloning the Repository](#cloning-the-repository)
-3. [Usage Instructions](#usage-instructions)
-4. [Installing Additional Dependencies](#installing-additional-dependencies)
+3. [Installing Dependencies](#installing-dependencies)
+4. [Deployment Instructions](#deployment-instructions)
 5. [Testing Instructions](#testing-instructions)
 6. [API Documentation](#api-documentation)
 7. [Changelog](#changelog)
-8. [Contribution Guidelines](#contribution-guidelines)
-9. [License](#license)
+8. [Development Environment Setup](#development-environment-setup)
+9. [Usage Instructions](#usage-instructions)
+10. [Contributing](#contributing)
+11. [Code of Conduct](#code-of-conduct)
 
 ## Description
 This repository contains the smart contracts for the ETHkey protocol. The ETHkey protocol is designed to facilitate secure and efficient transactions on the Ethereum blockchain.
@@ -21,14 +23,29 @@ To clone this repository, use the following command:
 gh repo clone Setland34/ETHkey-1
 ```
 
-## Installing Additional Dependencies
-To install additional dependencies, run the following command:
+## Installing Dependencies
+To install the necessary dependencies, run the following command:
 ```
 npm install
 ```
 
+## Deployment Instructions
+To deploy the smart contracts, follow these steps:
+1. Compile the contracts:
+```
+truffle compile
+```
+2. Migrate the contracts to the development network:
+```
+truffle migrate --network development
+```
+
 ## Testing Instructions
-To run tests for the smart contracts, use the following command:
+To run the tests for the smart contracts, use the following command:
+```
+truffle test
+```
+To run tests with a forked network, use the following command:
 ```
 forge test --fork-url https://eth-sepolia.g.alchemy.com/v2/YOURKEY
 ```
@@ -39,10 +56,56 @@ Detailed information about the functions and methods available in the smart cont
 ## Changelog
 Keep track of changes and updates made to the repository in this section.
 
-## Contribution Guidelines
-Provide detailed instructions on how to set up a development environment for contributors, including necessary tools and configurations. Include a section on how to write and run tests for new features or bug fixes. Add guidelines for writing clear and concise commit messages. Include a code of conduct to ensure a welcoming and inclusive community.
+## Development Environment Setup
+To set up a development environment, follow these steps:
+1. Install Node.js and npm.
+2. Install Truffle and Ganache:
+```
+npm install -g truffle ganache-cli
+```
+3. Clone the repository and install dependencies:
+```
+gh repo clone Setland34/ETHkey-1
+cd ETHkey-1
+npm install
+```
+4. Start Ganache:
+```
+ganache-cli
+```
+5. Compile and migrate the contracts:
+```
+truffle compile
+truffle migrate --network development
+```
 
-## License
-This project is licensed under the MIT License.
+## Usage Instructions
+To interact with the smart contracts using web3.js or ethers.js, follow these examples:
+
+### web3.js
+```javascript
+const Web3 = require('web3');
+const web3 = new Web3('http://127.0.0.1:8545');
+
+// Interact with the contract
+```
+
+### ethers.js
+```javascript
+const { ethers } = require('ethers');
+const provider = new ethers.providers.JsonRpcProvider('http://127.0.0.1:8545');
+
+// Interact with the contract
+```
+
+## Contributing
+To contribute to this project, follow these guidelines:
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Write clear and concise commit messages.
+4. Submit a pull request.
+
+## Code of Conduct
+To ensure a welcoming and inclusive community, we have adopted a code of conduct. Please read and follow it.
 
 <script src="https://gist.github.com/Setland34/1f52d3d6f2382851bafff6c5bb850b6b.js"></script>
