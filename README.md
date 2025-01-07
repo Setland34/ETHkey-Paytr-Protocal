@@ -1,4 +1,4 @@
-# ETHkey-1
+# ETHkey-1-1
 A repository for the ETHkey protocol smart contracts
 
 ## Table of Contents
