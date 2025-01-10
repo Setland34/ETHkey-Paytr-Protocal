@@ -1,8 +1,8 @@
 # PAYTR-Private
 A repository for the Paytr protocol smart contracts
 
-## Description
-This repository contains the Paytr protocol smart contracts. These contracts are used to handle various aspects of the Paytr protocol, including transactions, token management, and other related functionalities.
+## Repository Purpose
+This repository contains the smart contracts for the Paytr protocol. The purpose of this repository is to provide a secure and efficient implementation of the Paytr protocol's functionality.
 
 ## Cloning the Repository
 To clone this repository, use the following command:
