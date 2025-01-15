@@ -27,3 +27,4 @@ This repository contains the smart contracts for the Paytr protocol. The Paytr p
 To clone this repository, use the following command:
 ```sh
 gh repo clone Setland34/PAYTR-Private
+You can find the original file [here](https://github.com/Setland34/ETHkey-Paytr-Protocol-1/blob/ac43e0e8f8c006741c84bc3e67b172fcff60946b/README.md).
